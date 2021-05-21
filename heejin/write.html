@@ -1,0 +1,49 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="write.css">
+    <script src="write.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-lite.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-lite.min.js"></script>
+  </head>
+  <body>
+    <h2> 글쓰기 </h2>
+    <table class="table">
+     <tr>
+      <td class="td1"></td>
+      <td class="td2"></td>
+     </tr>
+     <tr>
+      <td class="td1">title</td>
+      <td class="td2"><input type="text" name="title" value="" style="width:100%;" />
+      </td>
+     </tr>
+           <tr>
+               <td class="td1">name</td>
+               <td class="td2"><input type="text" name="name"  style="width:100%;" /></td>
+           </tr>
+     <tr>
+      <td class="td1">content</td>
+    <td id="summernote"></td>
+ </tr>
+ </table>
+ <button type="submit" class="btn_primary">upload</button>
+  </body>
+</html>
+
+<style>
+   h2 { text-align : center;
+        color : #3A3A3A;}
+  .td1 { padding-right : 20px; }
+  .td2 { padding : 3px; }
+  .btn_primary { margin-left : 47%;
+                margin-top : 10px;
+                padding : 5px;
+                padding-right : 10px;
+                padding-left : 10px;
+                background-color : white;
+                border-radius: 7px;
+ }
+
+</style>
