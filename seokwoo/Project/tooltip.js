@@ -10,8 +10,8 @@ var tooltip = document.querySelector('.land-tooltip');
         tooltip.style.top = e.clientY + 'px'
         tooltip.style.left = e.clientX + 'px';
 
-        // 'name' 요소에 지정된 값(지명)을 반환합니다.
-        tooltip.textContent = e.target.getAttribute("name");
+        // 'title' 요소에 지정된 값(지명)을 반환합니다.
+        tooltip.textContent = e.target.getAttribute("title");
     });
 
     item.addEventListener('mouseleave', function() {
