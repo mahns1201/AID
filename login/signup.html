@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="작물 정보 관련 대시보드">
+        <meta name="author" content="GNU-CS">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="style.css">
+        <title>Document</title>
+        <script src="jquery-3.4.1.js"></script>
+    </head>
+    <body>
+        <section class="login-form">
+            <h1>정보 입력</h1>
+            <form action="">
+                <div class="int-area">
+                    <input type="text" name="id" id="id" autocomplete="off" required>
+                    <label for="id">이메일</label>
+                </div>
+                <div class="int-area">
+                    <input type="text" name="id" id="id" autocomplete="off" required>
+                    <label for="id">이름</label>
+                </div>
+                <div class="int-area">
+                    <input type="password" name="id" id="id" autocomplete="off" required>
+                    <label for="id">비밀번호</label>
+                </div>
+                <div class="int-area">
+                    <input type="passwordcheck" name="id" id="id" autocomplete="off" required>
+                    <label for="id">비밀번호 확인</label>
+                </div>
+                <div class="btn-area">
+                    <button id="btn" type="submit">회원가입</button>
+                </div>
+            </form>
+            <div class="caption">
+                <a href=""></a>
+                <a href=""></a>
+                <a href=""></a>
+            </div>
+        </section>
+
+        <script>
+            let id = $('#id');
+            let pw = $('#pw');
+            let pwcheck = $('#pwcheck')
+            let btn = $('#btn');
+
+            $(btn).on('click', function() {
+                if($(id).val() == "") {
+                    $(id).next('label').addClass('warning');
+                    setTimeout(function() {
+                        $('label').removeClass('warning');
+                    }, 1500);
+                }
+                else if($(pw).val() == "") {
+                    $(id).next('label').addClass('warning');
+                    setTimeout(function() {
+                        $('label').removeClass('warning');
+                    }, 1500);
+                }
+                else if($(pwcheck).val() == "") {
+                    $(id).next('label').addClass('warning');
+                    setTimeout(function() {
+                        $('label').removeClass('warning');
+                    }, 1500);
+                }
+            });
+        </script>
+    </body>
+</html>
