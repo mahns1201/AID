@@ -1,21 +1,34 @@
 import json
+import time
 import temp_color_match as tcm
 import hum_color_match as hcm
 
 # 전국
 
-korea_dict = {}
+while True:
+    korea_dict = {}
 
-for i in range(len(tcm.city)):
-    korea_dict[tcm.city[i]] = [
-        {"temperature": tcm.tempResultValues[i]},
-        {"temp_color": tcm.tempResultColors[i]},
-        {"moisture": hcm.humResultValues[i]},
-        {"moi_color": hcm.humResultColors[i]}
-    ]
+    if tcm.tempResultValues == [] or tcm.tempResultColors ==[] or hcm.humResultValues == [] or hcm.humResultColors ==[]:
+        print(time.strftime('%Y/%m/%d %H:%M:%S'), "loading now...") 
 
-with open('liveData.json', 'w', encoding='UTF-8-sig') as file:
-    file.write(json.dumps(korea_dict, ensure_ascii=False))
+    else:
+
+        for i in range(len(tcm.city)):
+            korea_dict[tcm.city[i]] = [
+                {"temperature": tcm.tempResultValues[i]},
+                {"temp_color": tcm.tempResultColors[i]},
+                {"moisture": hcm.humResultValues[i]},
+                {"moi_color": hcm.humResultColors[i]}
+            ]
+
+        with open('liveData.json', 'w', encoding='UTF-8-sig') as file:
+            file.write(json.dumps(korea_dict, ensure_ascii=False))
+
+        print(time.strftime('%Y/%m/%d %H:%M:%S'), "worked properly!")
+        
+    time.sleep(61)
+
+    
 
 
 # print(korea_dict)
