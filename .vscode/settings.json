@@ -1,5 +1,9 @@
 {
     "cSpell.words": [
         "yeongnam"
-    ]
+    ],
+    "debug.console.fontSize": 15,
+    "terminal.integrated.fontSize": 15,
+    "editor.fontSize": 15,
+    "markdown.preview.fontSize": 15
 }
