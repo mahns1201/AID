@@ -6,8 +6,8 @@
         <meta name="description" content="작물 정보 관련 대시보드">
         <meta name="author" content="GNU-CS">
         <meta name="viewport" content="width=device-width">
-        <link rel="stylesheet" href="nav.css">
-        <link rel="stylesheet" href="menu3.css">
+        <link rel="stylesheet" href="../nav.css">
+        <link rel="stylesheet" href="../menu3.css">
         <link rel="stylesheet" href="category1.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"/>
         <title>Agriculture Information Dashboard</title>
@@ -83,24 +83,24 @@
                 background: #EDCE7A;
             }
         </style>
-        <script src="nav.js" defer></script>
+        <script src="../nav.js" defer></script>
     </head>
     <body>
         <header>
             <nav class="navbar">
                 <div class="navbar__logo">
                     <i class="fas fa-tractor"></i>
-                    <a href="index.html">작물 정보 현황판</a>
+                    <a href="../index.html">작물 정보 현황판</a>
                 </div>
                 <ul class="navbar__menu">
-                    <li><a href="menu1.html">소개</a></li>
-                    <li><a href="menu2.html">농업 정보</a></li>
+                    <li><a href="../intro/menu1.html">소개</a></li>
+                    <li><a href="../info/menu2.html">농업 정보</a></li>
                     <li><a href="menu3.html">작물 사전</a></li>
                 </ul>
-                <a href="#" class="navbar__toogleBtn">
+                <a href="#" class="navbar__toggleBtn">
                     <i class="fas fa-bars"></i>
                 </a>
-                <a href="loginplus.html"class="login">
+                <a href="../login/loginplus.html" class="login">
                     <i class="fas fa-sign-in-alt"></i>
                 </a>
             </nav>
@@ -118,7 +118,8 @@
 
         <section>
             <b>쌍떡잎 식물</b>
-            <span class="green_window"><input id=text type="text" class='input_text' name="search" onkeydown="enterSearch()"></span>
+            <span class="green_window">
+            <input id="text" type="text" class='input_text' name="search" onkeydown="enterSearch()"></span>
             <input type="button" class='sch_smit' value="검색" onclick="myFunction()">
             <input type="button" class='write_btn' value="글쓰기" onclick="pageFunction()">
         </section>
@@ -144,7 +145,7 @@
         </div>
 
         <ul class="page">
-            <li><a href="#"></a></li>
+            <li><a href="#"><</a></li>
             <li><a href="#">1</a></li>
             <li><a href="#">2</a></li>
             <li><a href="#">3</a></li>
@@ -155,10 +156,11 @@
         <!--JAVASCRIPT-->
         <script type="text/javascript">
         function enterSearch() {
-            if(event.keyCode == 13){
+            if(event.keyCode == 13) {
                 myFunction();  // 실행할 이벤트
             }
         }
+
         function myFunction() {
             var x = document.getElementById("text").value;
             window.location.href = "" + x;

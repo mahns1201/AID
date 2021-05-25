@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!--작물 사전 페이지-->
+<!--농업 정보 페이지-->
 <html lang="en" dir="ltr">
     <head>
         <meta charset="UTF-8">
@@ -7,8 +7,13 @@
         <meta name="author" content="GNU-CS">
         <meta name="viewport" content="width=device-width">
         <link rel="stylesheet" href="../nav.css">
-        <link rel="stylesheet" href="../menu3.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"/>
+        <style>
+            section {
+                text-align: center;
+                padding-top: 70px;
+            }
+        </style>
         <title>Agriculture Information Dashboard</title>
         <script src="../nav.js" defer></script>
     </head>
@@ -22,7 +27,7 @@
                 <ul class="navbar__menu">
                     <li><a href="../intro/menu1.html">소개</a></li>
                     <li><a href="../info/menu2.html">농업 정보</a></li>
-                    <li><a href="menu3.html">작물 사전</a></li>
+                    <li><a href="../dict/menu3.html">작물 사전</a></li>
                 </ul>
                 <a href="#" class="navbar__toggleBtn">
                     <i class="fas fa-bars"></i>
@@ -32,19 +37,9 @@
                 </a>
             </nav>
         </header>
-
-        <aside id="left">
-            <h3>작물 선택</h3>
-            <ul>
-                <li><a href="category1.html">쌍떡잎 식물</a></li>
-                <li><a href="">외떡잎 식물</a></li>
-                <li><a href="">식용 작물</a></li>
-                <li><a href="">공예 작물</a></li>
-            </ul>
-        </aside>
-
+        
         <section>
-            <h2>작물 사전 사용 방법</h2>
+            <iframe frameborder=0 src="../dict/write.html" name="frame" width=800 height="800" scrolling="no"></iframe>
         </section>
     </body>
 </html>

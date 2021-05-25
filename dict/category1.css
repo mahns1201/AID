@@ -1,7 +1,7 @@
 .page {
     display: flex;
     position: absolute;
-    transform: translate(300%,20%);
+    transform: translate(300%, 20%);
     margin: 0;
     padding: 0;
     background: #fff;
