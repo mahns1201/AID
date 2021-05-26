@@ -2,11 +2,6 @@ import get_live_data as data
 
 # 전국
 
-city = []
-
-for i in range(len(data.korea_new)):
-    city.append(data.korea_new[i][0])
-
 try:
     TEMP = []
 
@@ -55,5 +50,7 @@ try:
         else: tempResultColors.append("#ffffff")
 
 except ValueError:
+    tempResultValues = []
+    tempResultColors = []
     pass
 

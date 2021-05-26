@@ -1,5 +1,6 @@
 import json
 import time
+import get_city as city
 import temp_color_match as tcm
 import hum_color_match as hcm
 
@@ -13,12 +14,12 @@ while True:
 
     else:
 
-        for i in range(len(tcm.city)):
-            korea_dict[tcm.city[i]] = [
+        for i in range(len(city.city)):
+            korea_dict[city.city[i]] = [
                 {"temperature": tcm.tempResultValues[i]},
                 {"temp_color": tcm.tempResultColors[i]},
-                {"moisture": hcm.humResultValues[i]},
-                {"moi_color": hcm.humResultColors[i]}
+                {"humidity": hcm.humResultValues[i]},
+                {"hum_color": hcm.humResultColors[i]}
             ]
 
         with open('liveData.json', 'w', encoding='UTF-8-sig') as file:
