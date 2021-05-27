@@ -18,13 +18,16 @@
                     <i class="fas fa-tractor"></i>
                     <a href="index.html">작물 정보 현황판</a>
                 </div>
-                <ul class="navbar__menu">
-                    <li><a href="./intro/menu1.html">소개</a></li>
-                    <li><a href="./info/menu2.html">농업 정보</a></li>
-                    <li><a href="./dict/menu3.html">작물 사전</a></li>
-                </ul>
-                <a href="#" class="navbar__toggleBtn">
-                    <i class="fas fa-bars"></i>
+
+                <div class=status-bar__menu>
+              <button class="status-bar__btn"><i class="fas fa-bars"></i></button>
+                <div class="status-bar__content">
+                  <a href="./intro/menu1.html">소개</a>
+                  <a href="./info/menu2.html">농업 정보</a>
+                  <a href="./dict/menu3.html">작물 사전</a>
+                </div>
+            </div>
+
                 </a>
                 <a href="./login/loginplus.html" class="login">
                     <i class="fas fa-sign-in-alt"></i>
@@ -175,18 +178,18 @@
         <script src="mouseover.js"></script>
         <script src="tooltip.js"></script>
         <script src="slide.js"></script>
-        
+
         <script>
             document.querySelector('.main').addEventListener('click', function(){
-            document.querySelector('.slideshow-container').style.transform = 
+            document.querySelector('.slideshow-container').style.transform =
             'translate(0)';
         })
             document.querySelector('.temp').addEventListener('click', function(){
-            document.querySelector('.slideshow-container').style.transform = 
+            document.querySelector('.slideshow-container').style.transform =
             'translate(-33.3%)';
         })
             document.querySelector('.moist').addEventListener('click', function(){
-            document.querySelector('.slideshow-container').style.transform = 
+            document.querySelector('.slideshow-container').style.transform =
             'translate(-66.6%)';
         })
         </script>
