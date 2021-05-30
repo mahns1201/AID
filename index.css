@@ -31,6 +31,7 @@ svg {
     justify-content: center;
     align-items: center;
     margin: auto;
+    margin-top: 10px;
 }
 
 svg .land {
