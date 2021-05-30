@@ -3,13 +3,14 @@ h2 {
     padding-top: 8px;
 }
 
-p { 
+p {
     text-align: left;
 }
 
 h3 {
     color : white;
-    padding-top: 0px;
+    font-size: 20px;
+
 }
 
 aside#left {
@@ -20,9 +21,9 @@ aside#left {
 #left {
     background:#353535;
     color : black;
-    padding:15px;
+    padding:10px;
     width:200px;
-    height:867px;
+    height:877px;
     margin:left;
     text-align:center;
 }
@@ -33,12 +34,12 @@ aside#left {
 }
 
 #left ul li {
-    border-top:1px solid grey;
-    border-bottom: 1px solid lightgrey;
+    border-top:1px solid white;
+
 }
 
 #left ul li a {
-    padding:10px;
+    padding:6.5px;
     display:block;
     color:white;
     text-decoration:none;

@@ -7,7 +7,7 @@
         <meta name="author" content="GNU-CS">
         <meta name="viewport" content="width=device-width">
         <link rel="stylesheet" href="../nav.css">
-        <link rel="stylesheet" href="../menu3.css">
+        <link rel="stylesheet" href="../side_menu.css">
         <link rel="stylesheet" href="category1.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"/>
         <title>Agriculture Information Dashboard</title>
@@ -86,45 +86,67 @@
         <script src="../nav.js" defer></script>
     </head>
     <body>
-        <header>
-            <nav class="navbar">
-                <div class="navbar__logo">
-                    <i class="fas fa-tractor"></i>
-                    <a href="../index.html">작물 정보 현황판</a>
-                </div>
-                <ul class="navbar__menu">
-                    <li><a href="../intro/menu1.html">소개</a></li>
-                    <li><a href="../info/menu2.html">농업 정보</a></li>
-                    <li><a href="menu3.html">작물 사전</a></li>
-                </ul>
-                <a href="#" class="navbar__toggleBtn">
-                    <i class="fas fa-bars"></i>
-                </a>
-                <a href="../login/loginplus.html" class="login">
-                    <i class="fas fa-sign-in-alt"></i>
-                </a>
-            </nav>
-        </header>
+      <header>
+          <nav class="navbar">
+              <div class="navbar__logo">
+                  <i class="fas fa-tractor"></i>
+                  <a href="../index.html">작물 정보 현황판</a>
+              </div>
+
+              <div class=status-bar__menu>
+            <button class="status-bar__btn"><i class="fas fa-bars"></i></button>
+              <div class="status-bar__content">
+                <a href="../intro/menu1.html">소개</a>
+                <a href="../info/menu2.html">농업 정보</a>
+                <a href="../dict/menu3.html">작물 사전</a>
+              </div>
+          </div>
+
+              </a>
+              <a href="../login/loginplus.html" class="login">
+                  <i class="fas fa-sign-in-alt"></i>
+              </a>
+          </nav>
+      </header>
 
         <aside id="left">
-            <h3>작물 선택</h3>
-            <ul>
-                <li><a href="">쌍떡잎 식물</a></li>
-                <li><a href="">외떡잎 식물</a></li>
-                <li><a href="">식용 작물</a></li>
-                <li><a href="">공예 작물</a></li>
-            </ul>
+          <h3>작물 선택</h3>
+          <ul>
+              <li><a href="category1.html">벼과</a></li>
+              <li><a href="">콩과</a></li>
+              <li><a href="">배추과</a></li>
+              <li><a href="">가지과</a></li>
+              <li><a href="">박과</a></li>
+              <li><a href="">백합과</a></li>
+              <li><a href="">장미과</a></li>
+              <li><a href="">국화과</a></li>
+              <li><a href="">꿀풀과</a></li>
+              <li><a href="">메꽃과</a></li>
+              <li><a href="">아욱과</a></li>
+              <li><a href="">마디풀과</a></li>
+              <li><a href="">천남성과</a></li>
+              <li><a href="">비름과</a></li>
+              <li><a href="">미나리과</a></li>
+              <li><a href="">참깨과</a></li>
+              <li><a href="">초롱꽃과</a></li>
+              <li><a href="">파초과</a></li>
+              <li><a href="">뽕나무과</a></li>
+              <li><a href="">진달래과</a></li>
+              <li><a href="">녹나무과</a></li>
+              <li><a href="">포도과</a></li>
+              <li><a href="">생강과</a></li>
+          </ul>
         </aside>
 
         <section>
-            <b>쌍떡잎 식물</b>
+            <b>벼과 식물</b>
             <span class="green_window">
             <input id="text" type="text" class='input_text' name="search" onkeydown="enterSearch()"></span>
             <input type="button" class='sch_smit' value="검색" onclick="myFunction()">
             <input type="button" class='write_btn' value="글쓰기" onclick="pageFunction()">
         </section>
 
-        <div class="card">
+        <div class="card" style="text-align:center;">
             <div class="card_title">방울토마토 재배 방법</div>
             <article class="card_content">
                 <p> 1) 밭 만들기 이랑 넓이는 110cm로 하여 심으면 관리가 용이하다.
@@ -134,7 +156,7 @@
             </article>
         </div>
 
-        <div class="card">
+        <div class="card" style="text-align:center;" >
             <div class="card_title">방울토마토 재배 방법</div>
             <article class="card_content">
                 <p> 1) 밭 만들기 이랑 넓이는 110cm로 하여 심으면 관리가 용이하다.

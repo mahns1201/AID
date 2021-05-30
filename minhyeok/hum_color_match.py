@@ -50,5 +50,7 @@ try:
         else: humResultColors.append("#ffffff")
 
 except ValueError:
+    humResultValues = []
+    humResultColors = []
     pass
 
