@@ -19,13 +19,16 @@
                     <i class="fas fa-tractor"></i>
                     <a href="index.html">작물 정보 현황판</a>
                 </div>
-                <ul class="navbar__menu">
-                    <li><a href="./intro/menu1.html">소개</a></li>
-                    <li><a href="./info/menu2.html">농업 정보</a></li>
-                    <li><a href="./dict/menu3.html">작물 사전</a></li>
-                </ul>
-                <a href="#" class="navbar__toggleBtn">
-                    <i class="fas fa-bars"></i>
+
+                <div class=status-bar__menu>
+                    <button class="status-bar__btn"><i class="fas fa-bars"></i></button>
+                <div class="status-bar__content">
+                  <a href="./intro/menu1.html">소개</a>
+                  <a href="./info/menu2.html">농업 정보</a>
+                  <a href="./dict/menu3.html">작물 사전</a>
+                </div>
+            </div>
+
                 </a>
                 <a href="./login/loginplus.html" class="login">
                     <i class="fas fa-sign-in-alt"></i>
@@ -33,15 +36,15 @@
             </nav>
         </header>
 
-        <div style="text-align: center;">
-            <button class="main" onclick="location.href='index.html'">메인</button>
-            <button class="temp" onclick="location.href='temp.html'">기온</button>
-            <button class="moist" onclick="location.href='moist.html'">습도</button>
+        <div class="imagebutton" style="text-align: center;">
+            <input class="main" type="image" src="../image/home.jpg" width="40" height="40" onclick="location.href='index.html'">
+            <input class="temp" type="image" src="../image/temp.jpg" width="40" height="40" onclick="location.href='temp.html'">
+            <input class="moist" type="image" src="../image/moist.jpg" width="40" height="40" onclick="location.href='moist.html'">
         </div>
 
         <!--기온 지도-->
         <div class="southKorea">
-            <svg id="tempMap" version="1.2" viewbox="0 0 1000 1075" xmlns="http://www.w3.org/2000/svg" width="770" height="800">
+            <svg id="tempMap" version="1.2" viewbox="0 0 1000 1075" xmlns="http://www.w3.org/2000/svg" width="750" height="750">
                 <path id="KR-11" title="서울특별시" class="land" d="M398.4 211.4l-1.5 5.7 4.4-0.1 3.7-1.3 3.2-0.1 1.2 2.9-0.4 3-2.2 1.1-2.4 1.6 0 3.6 1.3 1.5-2.7 3.7-1.5 2.6-4.1 2.4-4.5 1.1-4.7 2.3-1.8-4.1-3.9 0.9-4 1.2-2.7 1.6-2.9 0.5-6.8-0.3-4.7-6.1-4.6-1.4-3.1-2-0.8-5.8-3.2-4.4-3.7-4.6 2.3-5.1 4.5 0.2 5 3.1 3.8-1.2 3.4-2.1 0.2-3.4 0.9-3.2 7.1-0.7 3.7-4.6 2.2-4.8 3.2-3.3 4.9-1.2 5.7 0.4 2.7 4.7 1.1 6.4 1.6 4.4 0.1 4.9z">
                 </path>
                 <path id="KR-26" title="부산광역시" class="land" d="M710.4 706.9l-1.3 1.6-1-0.8-1.1-1.4-3-1.7-1.5-1.7 0.1-2.4 1.2-1.2 1.6 0.1 1.5 2.1 1.4 1.5 1.1 0.6-1 0.8-0.2 1.4 2.2 1.1z m16.2-20.3l-0.8 1.5-4.2-0.1-2.2 0.4-1.7-0.1-1.7 0.8-1.9 0.2-0.1 2.7 1.2 1.9 0.2 2.3-0.8 2.5-3.5 1.7-4.6-4-1.3-1.5-4.2 4.4-1.9 3.6-0.6 3.7-1.2 0.9-0.8-1.9-1.9-2 0.5 5.7-1.2 0-0.5-1.3-0.7-0.3-3.1 2.1-1.1-1.3-1.3-4.4 0.6-3.9 1.2-5 0.2-2.8 1.3-2.4 2.4-3 2.3-3.4 1.6-11.5 2.3-2.8 3-2.2 3.7-1.5 4 0.2 3.1 2 0.9 4.2 2.8 4 3.7 2.9 2.8 3.7 3.2 3.3 0.3 0.7z">

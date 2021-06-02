@@ -91,9 +91,9 @@ footer {
     width: 100%;
     height: 30px;
     position: absolute;
-    bottom: 0;
+    bottom: 1;
     text-align: center;
     padding: 5px;
+    padding-top: 90px;
     padding-bottom: 30px;
 }
-*/

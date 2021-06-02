@@ -20,5 +20,4 @@
   </script> 
 </head> 
 
-<body> <div id="target" /> </body>
-
+<body> <div id="target" /></body>
