@@ -21,7 +21,7 @@
                 </div>
 
                 <div class=status-bar__menu>
-              <button class="status-bar__btn"><i class="fas fa-bars"></i></button>
+                    <button class="status-bar__btn"><i class="fas fa-bars"></i></button>
                 <div class="status-bar__content">
                   <a href="./intro/menu1.html">소개</a>
                   <a href="./info/topography.html">농업 정보</a>
@@ -36,11 +36,11 @@
             </nav>
         </header>
 
-        <div style="text-align: center;">
-            <button class="main" onclick="location.href='index.html'">메인</button>
-            <button class="temp" onclick="location.href='temp.html'">기온</button>
-            <button class="moist" onclick="location.href='moist.html'">습도</button>
-        </div>
+        <div class="imagebutton" style="text-align: center;">
+           <input class="main" type="image" src="../image/home.jpg" width="40" height="40" onclick="location.href='index.html'">
+           <input class="temp" type="image" src="../image/temp.jpg" width="40" height="40" onclick="location.href='temp.html'">
+           <input class="moist" type="image" src="../image/moist.jpg" width="40" height="40" onclick="location.href='moist.html'">
+       </div>
 
         <!--메인 지도-->
         <!--지도에 나와있는 모든 지역을 아래 줄에 나열되어 있습니다.-->
@@ -48,7 +48,7 @@
         , {id:"KR-41", 경기}, {id:"KR-42", 강원}, {id:"KR-43", 충북}, {id:"KR-44", 충남}, {id:"KR-45", 전북}, {id:"KR-46", 전남}, {id:"KR-47", 경북}
         , {id:"KR-48", 경남}, {id:"KR-49", 제주}, {id:"KR-50", 세종}-->
         <div class="southKorea">
-            <svg id="mainMap" version="1.2" viewbox="0 0 1000 1075" xmlns="http://www.w3.org/2000/svg" width="770" height="800">
+         <svg id="mainMap" version="1.2" viewbox="0 0 1000 1075" xmlns="http://www.w3.org/2000/svg" width="750" height="750">
                 <g id="Seoul">
                     <path id="KR-11" title="서울특별시" class="land" d="M398.4 211.4l-1.5 5.7 4.4-0.1 3.7-1.3 3.2-0.1 1.2 2.9-0.4 3-2.2 1.1-2.4 1.6 0 3.6 1.3 1.5-2.7 3.7-1.5 2.6-4.1 2.4-4.5 1.1-4.7 2.3-1.8-4.1-3.9 0.9-4 1.2-2.7 1.6-2.9 0.5-6.8-0.3-4.7-6.1-4.6-1.4-3.1-2-0.8-5.8-3.2-4.4-3.7-4.6 2.3-5.1 4.5 0.2 5 3.1 3.8-1.2 3.4-2.1 0.2-3.4 0.9-3.2 7.1-0.7 3.7-4.6 2.2-4.8 3.2-3.3 4.9-1.2 5.7 0.4 2.7 4.7 1.1 6.4 1.6 4.4 0.1 4.9z">
                     </path>
@@ -209,55 +209,7 @@
                     zoomScaleSensitivity: 0.5
                 });
             };
-=======
-        <script src="slide.js"></script>
 
-        <script>
-            document.querySelector('.main').addEventListener('click', function(){
-            document.querySelector('.slideshow-container').style.transform =
-            'translate(0)';
-        })
-            document.querySelector('.temp').addEventListener('click', function(){
-            document.querySelector('.slideshow-container').style.transform =
-            'translate(-33.3%)';
-        })
-            document.querySelector('.moist').addEventListener('click', function(){
-            document.querySelector('.slideshow-container').style.transform =
-            'translate(-66.6%)';
-        })
-        </script>
-
-        <script>
-            var slideIndex = 1;
-            showSlides(slideIndex);
-
-            function currentSlide(n) {
-                showSlides(slideIndex += n);
-            }
-
-            function currentSlide(n) {
-                showSlides(slideIndex = n);
-            }
-
-            function showSlides(n) {
-                var i;
-                var slides = document.getElementsByClassName("southKoreas");
-                var dots = document.getElementsByClassName("dot");
-                if (n > slides.length) {slideIndex = 1}
-
-                if (n < 1) {slideIndex = slides.length}
-
-                for(i = 0; i < slides.length; i++) {
-                    slides[i].style.display = "none";
-                }
-
-                for(i = 0; i < dots.length; i++) {
-                    dots[i].className = dots[i].className.replace(" active", "");
-                }
-                slides[slideIndex - 1].style.display = "block";
-                dots[slideIndex - 1].className += " active";
-            }
->>>>>>> upstream/main
         </script>
     </body>
 </html>
