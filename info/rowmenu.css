@@ -1,15 +1,36 @@
 
+ul {
+  display:flex;
+  list-style:none;
+  text-align: center;
+  padding: 20px 370px;
+  background-color: lightgrey;
+  margin-top:0;
+}
 
-ul {  list-style:none;
-      text-align: center;
-      padding: 20px;
-    background-color: lightgrey;
-    margin-top:0;}
-
-ul li { display: inline; }
+ul li { align-items: center;
+display: block; margin: 0 auto;
+}
 
 ul li a { color:black;
-padding :80px;
+  font-weight: bold;
 }
 
 ul li a:hover { color: white; }
+
+@media screen and (max-width: 1500px) {
+
+ul {
+flex-direction: column;
+align-items: center;
+width: 100%;
+padding: 8px 24px;
+
+}
+
+ul li {
+  width: 100%;
+  text-align: center;
+  padding: 8px;
+}
+}
