@@ -1,57 +1,65 @@
 @import url('https://fonts.googleapis.com/css2?family=Orelega+One&family=Yeon+Sung&display=swap');
 
 h1 {
+  text-align: center;
     font-family: 'Paytone One', sans-serif;
-    font-size: 45px;
-    padding-left: 75px;
-    padding-top: 20px;
+    font-size: 38px;
+    padding-top: 40px;
+    max-width: 1100px;
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 0px;
 }
 
 span {
     color : black;
     font-style: bold;
 }
-  
+
 pre {
-    padding-top: 15px;
+    padding-top: 30px;
     padding-bottom: 10px;
     color: #3A3A3A;
-    font-size: 23px;
+    font-size: 18px;
     font-family: 'Orelega One', cursive;
     font-family: 'Yeon Sung', cursive;
-}
-  
-b { color:#EDCE7A;}
-  
-.gallerylist {
-    max-width: 2000px;
+    max-width: 1100px;
     width: 100%;
     margin: 0 auto;
     padding-left: 0px;
 }
-  
+
+b { color:#EDCE7A;}
+
+.gallerylist {
+    max-width: 1100px;
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 0px;
+}
+
 .gallerylist > ul {
     font-size: 0;
 }
-  
+
 .gallerylist > ul > li {
     display: inline-block;
     vertical-align: top;
     width: 33%;
 }
-  
+
 .gallerylist > ul > li > a {
     display: block;
     width: auto;
     text-decoration: none;
     margin: 5px;
 }
-  
+
 .gallerylist > ul > li > a .screen {
     position: relative;
     overflow: hidden;
 }
-  
+
 .gallerylist > ul > li > a .screen .top {
     position: absolute;
     bottom: 150%;
@@ -62,7 +70,7 @@ b { color:#EDCE7A;}
     font-weight: 900;
     transition: all .35s;
 }
-  
+
 .gallerylist > ul > li > a .screen .bottom {
     position: absolute;
     top: 150%;
@@ -72,11 +80,11 @@ b { color:#EDCE7A;}
     font-size: 15px;
     transition: all .35s;
 }
-  
+
 .gallerylist > ul > li > a .screen img {
     width: 100%;
 }
-  
+
 .gallerylist > ul > li > a .screen::after {
     content: '';
     display: block;
@@ -90,23 +98,22 @@ b { color:#EDCE7A;}
     opacity: 0;
     transition: all .35s;
 }
-  
+
 .gallerylist > ul > li > a:hover .top {
     bottom: 52%;
 }
-  
+
 .gallerylist > ul > li > a:hover .bottom {
     top: 52%;
 }
-  
+
 .gallerylist > ul > li > a:hover .screen::after {
     opacity: 1;
 }
-  
-@media screen and (max-width: 850px) {
-.gallerylist > ul> li { 
-    display: inline;
+
+.gallerylist > ul> li {
+    display: inline-block;
     vertical-align: top;
-    width: 80%;
-    }
+    max-width: 850px;
+    padding-bottom: 222px;
 }
