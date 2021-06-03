@@ -1,0 +1,61 @@
+body {
+    color: #555;
+    height: 100%;
+    width: 100%;
+    font-family: "맑은 고딕",Malgun Gothic;
+    font-size: 14px;
+    line-height: 1.4;
+    letter-spacing: -1.6px;}
+
+section {
+    width: 1000px;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.contentsTableWrap {
+    width: 100%;
+    border-top: 1px solid #000;
+    margin-bottom: 5px;
+}
+
+.mainContents .contentsTableWrap table {
+    width: 100%;
+    border-collapse: collapse;
+    border-left: 1px solid #bec2cb;
+}
+table, td, th { border:1px solid grey;}
+
+img {  text-align: center;
+}
+
+h1 { padding-top: 20px;
+  color: #EDCE7A;}
+.topContents {
+  padding-bottom: 10px;
+}
+
+.picture { text-align: center;}
+
+.mainContents h2 {
+    padding-left: 10px;
+    background: url(/pub/site/default/images/sub_common/sub_bit_2.png) no-repeat left 2px;
+    font-size: 18px;
+    color: #3A3A3A;
+    margin-bottom: 15px;
+    font-family: 'ns';
+}
+
+.mainContents h3 {
+    padding-left: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #5d5d5d;
+    font-family: 'NanumGothicWeb';
+    background: url(/pub/site/default/images/sub_common/sub_bit_3.png) no-repeat 20px 15px #f1f1f1;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    border-top: 1px solid #000;
+    margin-bottom: 20px; }

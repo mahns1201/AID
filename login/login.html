@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="작물 정보 관련 대시보드">
+        <meta name="author" content="GNU-CS">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="style.css">
+        <title>login</title>
+        <script src="jquery-3.4.1.js"></script>
+    </head>
+    <body>
+        <section class="login-form">
+            <h1>LOGIN</h1>
+            <form action="">
+                <div class="int-area">
+                    <input type="text" name="id" id="id" autocomplete="off" required>
+                    <label for="id">USERNAME</label>
+                </div>
+                <div class="int-area">
+                    <input type="password" name="id" id="id" autocomplete="off" required>
+                    <label for="id">PASSWORD</label>
+                </div>
+                <div class="btn-area">
+                    <button id="btn" type="submit">LOGIN</button>
+                </div>
+            </form>
+
+            <div class="caption">
+                <a href="signup.html">회원가입</a>
+                <a href="">   |   </a>
+                <a href="forgot-password.html">Forgot Password?</a>
+            </div>
+        </section>
+
+        <script>
+            let id = $('#id');
+            let pw = $('#pw');
+            let btn = $('#btn');
+
+            $(btn).on('click', function() {
+                if($(id).val() == "") {
+                    $(id).next('label').addClass('warning');
+                    setTimeout(function() {
+                        $('label').removeClass('warning');
+                    }, 1500);
+                }
+                else if($(pw).val() == "") {
+                    $(id).next('label').addClass('warning');
+                    setTimeout(function() {
+                        $('label').removeClass('warning');
+                    }, 1500);
+                }
+            });
+        </script>
+    </body>
+</html>

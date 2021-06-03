@@ -1,0 +1,56 @@
+h2 {
+    text-align: center;
+    padding-top: 8px;
+}
+
+p {
+    text-align: left;
+}
+
+h3 {
+    color : white;
+    font-size: 20px;
+
+}
+
+aside#left {
+    width:200px;
+    float:left;
+}
+
+#left {
+    background:#353535;
+    color : black;
+    padding:10px;
+    width:200px;
+    height:877px;
+    margin:left;
+    text-align:center;
+}
+
+#left ul {
+    padding:0;
+    list-style:none;
+}
+
+#left ul li {
+    border-top:1px solid white;
+
+}
+
+#left ul li a {
+    padding:6.5px;
+    display:block;
+    color:white;
+    text-decoration:none;
+}
+
+#left li a.current {
+    background-color:gery;
+    color:white;
+}
+
+#left li a:hover:not(.current) {
+    background-color: grey;
+    color:white;
+}

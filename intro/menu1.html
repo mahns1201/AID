@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<!--소개 페이지-->
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="작물 정보 관련 대시보드">
+        <meta name="author" content="GNU-CS">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="../nav.css">
+        <link rel="stylesheet" href="menu1.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"/>
+        <title>Agriculture Information Dashboard</title>
+        <script src="../nav.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <nav class="navbar">
+                <div class="navbar__logo">
+                    <i class="fas fa-tractor"></i>
+                    <a href="../index.html">작물 정보 현황판</a>
+                </div>
+
+                <div class=status-bar__menu>
+                <button class="status-bar__btn"><i class="fas fa-bars"></i></button>
+                <div class="status-bar__content">
+                    <a href="../intro/menu1.html">소개</a>
+                    <a href="../info/topography.html">농업 정보</a>
+                    <a href="../dict/menu3.html">작물 사전</a>
+                </div>
+
+                <a href="../login/loginplus.html" class="login">
+                    <i class="fas fa-sign-in-alt"></i>
+                </a>
+            </nav>
+        </header>
+        <div>
+            <section>
+                <h1><b>A</b>griculture <b>I</b>nformation <b>D</b>ashboard</h1>
+                <pre>
+                    <span>'작물 정보 현황판'</span>을 통해 여러 지역의 작물을 확인해보세요!
+                    기온, 계절에 따른 작물의 변화를 파악할 수 있습니다.
+
+                    작물에 대한 정보를 얻고싶으시다면
+                    <span>'작물사전'</span>을 통해 여러 사람들이 올린 작물 정보를 열람하고 직접 업로드해보세요!
+                    농업 노하우 및 다양한 작물정보들을 열람 및 등록 가능합니다.
+
+                    작물을 연구하는데 필요한 여러 데이터들이 필요하시다면 <span>'농업 정보'</span>에서 확인해보세요!
+                    지형의 특징부터 기상특징, 재배기술 등 다양한 정보들을 한눈에 파악 할 수 있습니다.
+                </pre>
+            </section>
+        </div>
+
+        <div class="gallerylist">
+            <ul>
+                <li>
+                    <a href="../dict/menu3.html">
+                        <div class="screen">
+                            <div class="top">농업 가이드라인 제공</div>
+                            <div class="bottom">지역별 주요 작물 파악 가능 <br> 다양한 농업 노하우</div>
+                            <img src="../image/wheat.jpg">
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../index.html">
+                        <div class="screen">
+                            <div class="top">미래 작물 예측 가능</div>
+                            <div class="bottom">IPPC보고서 기반 향후 기온 변화</div>
+                            <img src="../image/potato.jpg">
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../info/topography.html">
+                        <div class="screen">
+                            <div class="top">농업 정보 제공</div>
+                            <div class="bottom">농업에 필요한 다양한 정보 제공</div>
+                            <img src="../image/carrot.jpg">
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+      
+        <footer>
+            <div id="footer-logo">
+                <img src="../image/mark.png" width="50" height="30">
+            </div>
+            <div id="copyright">
+                Copyright ⓒ 2021 All Rights Reserved
+            </div>
+        </footer>
+    </body>
+</html>

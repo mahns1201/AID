@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="작물 정보 관련 대시보드">
+        <meta name="author" content="GNU-CS">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="write.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-lite.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+        <style>
+
+
+            .btn_primary {
+                margin-left : 47%;
+                margin-top : 10px;
+                padding : 5px;
+                padding-right : 10px;
+                padding-left : 10px;
+                background-color : white;
+                border-radius: 7px;
+            }
+        </style>
+        <script src="write.js" defer></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-lite.min.js"></script>
+    </head>
+
+    <body>
+
+        <form class="uk-form-stacked">
+
+            <div class="uk-margin">
+                <label class="form-label" >제목</label>
+                <div class="write-title">
+                    <input class="uk-input" id="form-stacked-text" type="text" style="width: 100%;" placeholder="제목을 입력하세요.">
+                </div>
+                <label class="form-label" >작물 이름과 분류를 선택하세요.</label>
+                <br>
+                <input class="input" id="agriculture-name" type="text" style="width: 49.5%;"placeholder="작물 이름을 입력하세요.">
+
+
+                <select class="select" id="form-stacked-select"  style="width: 49.5%;" >
+                  <option>벼과</option><option>콩과</option><option>배추과</option><option>가지과</option><option>박과</option><option>백합과</option><option>장미과</option><option>국화과</option>
+                  <option>꿀풀과</option><option>메꽃과</option><option>아욱과</option><option>마디풀과</option><option>천남성과</option><option>비름과</option><option>미나리과</option>
+                  <option>참깨과</option><option>초롱꽃과</option><option>파초과</option><option>뽕나무과</option><option>진달래과</option><option>녹나무과</option><option>포도과</option><option>생강과</option>
+                </select>
+            </div>
+
+            <label class="form-label"> 기온과 습도를 입력하세요.</label>
+            <br>
+            <span class="form-data">
+                <input class="input" id="lowest-temperature" type="text" style="width: 24.5%;"placeholder="최저기온 입력">
+                <input class="input" id="highest-temperature" type="text" style="width: 24.5%;"placeholder="최고기온 입력">
+                <input class="input" id="minimum-humidity" type="text" style="width: 24.5%;"placeholder="최저습도 입력">
+                <input class="input" id="highest-humidity" type="text" style="width: 24.5%;"placeholder="최고습도 입력">
+            </span>
+
+            <div>
+                    <label class="form-label" for="form-content">내용</label>
+                    <div id="summernote"></div>
+            </div>
+
+        </form>
+
+
+        <button type="submit" class="btn_primary">upload</button>
+    </body>
+</html>

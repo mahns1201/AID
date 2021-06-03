@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!--로그인 프레임 추가된 페이지-->
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="작물 정보 관련 대시보드">
+        <meta name="author" content="GNU-CS">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="../nav.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"/>
+        <title>Agriculture Information Dashboard</title>
+        <style>
+            iframe {
+                margin-top: 80px;
+            }
+        </style>
+        <script src="../nav.js" defer></script>
+    </head>
+    <body>
+        <!--header = 상단바-->
+        <header>
+            <nav class="navbar">
+                <div class="navbar__logo">
+                    <i class="fas fa-tractor"></i>
+                    <a href="../index.html">작물 정보 현황판</a>
+                </div>
+
+                <div class=status-bar__menu>
+              <button class="status-bar__btn"><i class="fas fa-bars"></i></button>
+                <div class="status-bar__content">
+                  <a href="../intro/menu1.html">소개</a>
+                  <a href="../info/topography.html">농업 정보</a>
+                  <a href="../dict/menu3.html">작물 사전</a>
+                </div>
+            </div>
+
+                </a>
+                <a href="../login/loginplus.html" class="login">
+                    <i class="fas fa-sign-in-alt"></i>
+                </a>
+            </nav>
+        </header>
+
+        <!--login 페이지 iframe 추가-->
+        <section>
+            <iframe frameborder=0 src="./login.html" name="frame" width=100% height="600px" scrolling="no"></iframe>
+        </section>
+    </body>
+</html>

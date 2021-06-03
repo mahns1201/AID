@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<!--작물 사전 페이지-->
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="작물 정보 관련 대시보드">
+        <meta name="author" content="GNU-CS">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="../nav.css">
+        <link rel="stylesheet" href="../side_menu.css">
+        <link rel="stylesheet" href="category1.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"/>
+        <title>Agriculture Information Dashboard</title>
+        <style>
+            .card_title {
+                font-size: 20px;
+            }
+
+            div.card {
+                margin-left: 21%;
+                margin-top: 30px;
+                padding: 10px;
+                border-radius: 5px;
+                height: 300px;
+                max-width: 840px;
+                padding-left: 1em;
+                padding-right: 1em;
+                background-color: lightgrey;
+                display: inline-block;
+            }
+
+            section {
+                margin-top: 20px;
+                padding: 20px;
+                text-align: center;
+                font-size: 25px;
+            }
+
+            .green_window {
+                display: inline-block;
+                width: 600px; height: 40px;
+                border: 3px solid #3A3A3A;
+                background: white;
+            }
+
+            .input_text {
+                width: 552px; height: 30px;
+                margin: 6px 0 0 9px;
+                border: 0;
+                line-height: 21px;
+                font-weight: bold;
+                font-size: 16px;
+                outline: none;
+            }
+
+            .sch_smit {
+                width: 54px; height: 46px;
+                margin: 0; border: 0;
+                vertical-align: top;
+                background: #3A3A3A;
+                color: white;
+                font-weight: bold;
+                border-radius: 1px;
+                cursor: pointer;
+            }
+
+            .sch_smit:hover {
+                background: #EDCE7A;
+            }
+
+            .write_btn{
+                width: 54px; height: 46px;
+                margin: 0; border: 0;
+                vertical-align: top;
+                background: #3A3A3A;
+                color: white;
+                font-weight: bold;
+                border-radius: 1px;
+                cursor: pointer;
+            }
+
+            .write_btn:hover{
+                background: #EDCE7A;
+            }
+        </style>
+        <script src="../nav.js" defer></script>
+    </head>
+    <body>
+      <header>
+          <nav class="navbar">
+              <div class="navbar__logo">
+                  <i class="fas fa-tractor"></i>
+                  <a href="../index.html">작물 정보 현황판</a>
+              </div>
+
+              <div class=status-bar__menu>
+            <button class="status-bar__btn"><i class="fas fa-bars"></i></button>
+              <div class="status-bar__content">
+                <a href="../intro/menu1.html">소개</a>
+                <a href="../info/topography.html">농업 정보</a>
+                <a href="../dict/menu3.html">작물 사전</a>
+              </div>
+          </div>
+
+              </a>
+              <a href="../login/loginplus.html" class="login">
+                  <i class="fas fa-sign-in-alt"></i>
+              </a>
+          </nav>
+      </header>
+
+        <aside id="left">
+          <h3>작물 선택</h3>
+          <ul>
+              <li><a href="category1.html">벼과</a></li>
+              <li><a href="">콩과</a></li>
+              <li><a href="">배추과</a></li>
+              <li><a href="">가지과</a></li>
+              <li><a href="">박과</a></li>
+              <li><a href="">백합과</a></li>
+              <li><a href="">장미과</a></li>
+              <li><a href="">국화과</a></li>
+              <li><a href="">꿀풀과</a></li>
+              <li><a href="">메꽃과</a></li>
+              <li><a href="">아욱과</a></li>
+              <li><a href="">마디풀과</a></li>
+              <li><a href="">천남성과</a></li>
+              <li><a href="">비름과</a></li>
+              <li><a href="">미나리과</a></li>
+              <li><a href="">참깨과</a></li>
+              <li><a href="">초롱꽃과</a></li>
+              <li><a href="">파초과</a></li>
+              <li><a href="">뽕나무과</a></li>
+              <li><a href="">진달래과</a></li>
+              <li><a href="">녹나무과</a></li>
+              <li><a href="">포도과</a></li>
+              <li><a href="">생강과</a></li>
+          </ul>
+        </aside>
+
+        <section>
+            <b>벼과 식물</b>
+            <span class="green_window">
+            <input id="text" type="text" class='input_text' name="search" onkeydown="enterSearch()"></span>
+            <input type="button" class='sch_smit' value="검색" onclick="myFunction()">
+            <input type="button" class='write_btn' value="글쓰기" onclick="pageFunction()">
+        </section>
+
+        <div class="card" style="text-align:center;">
+            <div class="card_title">방울토마토 재배 방법</div>
+            <article class="card_content">
+                <p> 1) 밭 만들기 이랑 넓이는 110cm로 하여 심으면 관리가 용이하다.
+                    2)재배 110cm의 이랑에 50cm정도로 심으며 2m정도의 지주를 옆에 세운다. 토마토는 원 줄기만 키우는 외대 가꾸기 방식이 좋다.
+                    토마토는 그 성질이 원래부터 잎 겨드랑이에서 곁가지가 차례로 나오므로 곁가지는 제거한다. 방울 토마토는 곁눈을 2개쯤 기르면 수확량이 많다.
+                    3) 수확 수시로 잘 익은 것만 수확하면 된다. </p>
+            </article>
+        </div>
+
+        <div class="card" style="text-align:center;" >
+            <div class="card_title">방울토마토 재배 방법</div>
+            <article class="card_content">
+                <p> 1) 밭 만들기 이랑 넓이는 110cm로 하여 심으면 관리가 용이하다.
+                    2)재배 110cm의 이랑에 50cm정도로 심으며 2m정도의 지주를 옆에 세운다. 토마토는 원 줄기만 키우는 외대 가꾸기 방식이 좋다.
+                    토마토는 그 성질이 원래부터 잎 겨드랑이에서 곁가지가 차례로 나오므로 곁가지는 제거한다. 방울 토마토는 곁눈을 2개쯤 기르면 수확량이 많다.
+                    3) 수확 수시로 잘 익은 것만 수확하면 된다. </p>
+            </article>
+        </div>
+
+        <ul class="page">
+            <li><a href="#"><</a></li>
+            <li><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">></a></li>
+        </ul>
+
+        <!--JAVASCRIPT-->
+        <script type="text/javascript">
+        function enterSearch() {
+            if(event.keyCode == 13) {
+                myFunction();  // 실행할 이벤트
+            }
+        }
+
+        function myFunction() {
+            var x = document.getElementById("text").value;
+            window.location.href = "" + x;
+        }
+
+        function pageFunction() {
+            window.location.href = "writeplus.html";
+        }
+        </script>
+    </body>
+</html>
