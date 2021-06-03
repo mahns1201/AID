@@ -59,18 +59,11 @@ svg .land-hightlight {
     box-shadow: 0 8px 17px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
 }
 
-.slideshow-container{
-    width: 400vw;
-    transition: transform 0.5s;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+.imagebutton {
+    padding-top: 15px;
 }
 
-.inner {
-    width: 100vw;
-    float: left;
-}
-
-.inner .southKorea{
-    width: 100%;
+input[type=image] {
+    margin-left: 10px;
+    margin-right: 10px;
 }

@@ -1,7 +1,7 @@
 .scroll-top{
   height: 60px;
   width: 60px;
-  background-color: white;
+  background-color: none;
   position: fixed;
   bottom: 20px;
   right: 20px;
@@ -9,11 +9,13 @@
   border: none;
   border-radius: 50%;
   cursor: pointer;
-
+z-index: 1;
   transform: scale(0.9);
   transition: .3s ease-in-out transform;
 
 }
+
+
 
 .scroll-top:hover{
   transform: scale(1);

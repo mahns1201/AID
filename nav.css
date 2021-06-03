@@ -88,12 +88,25 @@ header {
 }
 
 footer {
-    width: 100%;
-    height: 30px;
-    position: absolute;
-    bottom: 1;
-    text-align: center;
-    padding: 5px;
-    padding-top: 90px;
-    padding-bottom: 30px;
+width: 100%;
+height: 8%;
+text-align: center;
+position: absolute;
+background-color: lightgrey;
+
+}
+
+#footer-logo{
+  float:left;
+  padding-top: 25px;
+  padding-left: 15px;
+  margin: auto;
+}
+
+#copyright{
+  text-align: center;
+  font-size: 17px;
+  font-weight: bold;
+  padding-top: 25px;
+
 }
