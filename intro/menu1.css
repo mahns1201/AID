@@ -46,6 +46,8 @@ b { color:#EDCE7A;}
     display: inline-block;
     vertical-align: top;
     width: 33%;
+    max-width: 850px;
+    padding-bottom: 222px;
 }
 
 .gallerylist > ul > li > a {
